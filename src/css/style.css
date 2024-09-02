@@ -21,8 +21,6 @@
   display: grid;
   grid-template-columns: 250px 300px 300px 300px;
   grid-template-rows: 200px 200px;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 /* css pour la card profil */
