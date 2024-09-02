@@ -6,6 +6,7 @@
   --Lime-green-exercise: hsl(145, 58%, 55%);
   --Violet-social: hsl(264, 64%, 52%);
   --Soft-orange-self-care: hsl(43, 84%, 65%);
+  --violet-dark: hsl(235, 46%, 20%);
 }
 
 .container {
@@ -13,7 +14,7 @@
   box-sizing: border-box;
   display: grid;
   align-items: center;
-
+  font-family: "Rubik", sans-serif;
   justify-content: center;
 }
 .dashboard {
@@ -24,42 +25,121 @@
   align-items: center;
   gap: 20px;
 }
+/* css pour la card profil */
 .profilCard {
   grid-column: 1/2;
   grid-row: 1/3;
   height: 100%;
-  background-color: red;
-  display: flex;
-  flex-direction: column;
+  background-color: var(--Blue);
   justify-content: space-between;
-  margin-left: 50px;
+  border-radius: 20px;
+}
+.nameProfil {
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+  background-color: var(--Blue);
+}
+.nameProfil img {
+  border: 4px solid white;
+  border-radius: 50px;
+}
+.nameProfil p {
+  font-size: 14px;
+}
+.nameProfil h1 {
+  width: 50px;
+  font-size: 26px;
+  font-weight: 400;
 }
 .profilCard img {
   height: 80px;
 }
 .textProfil {
-  background-color: violet;
+  background-color: var(--violet-dark);
   grid-column: 2/3;
   grid-row: 2/3;
   height: 200px;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  z-index: 1;
+  top: 528px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+  font-size: 16px;
 }
+.textProfil ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 20px;
+}
+/* css pour la card profil */
+
+/* css pour les autres cards */
 .card {
   background-color: green;
   height: 100%;
   display: grid;
 }
-.logo {
+.logo1 {
   background-color: orange;
+}
+.logo1,
+.logo2,
+.logo3,
+.logo4,
+.logo5,
+.logo6 {
   height: 50px;
   display: flex;
   justify-content: end;
 }
-.logo img {
+.logo1 img {
   margin-right: 10px;
   height: 70px;
+  clip-path: inset(10px 0 0 0);
+  position: absolute;
+  top: 300px;
+}
+.logo2 img {
+  margin-right: 10px;
+  height: 70px;
+  clip-path: inset(10px 0 0 0);
+  position: absolute;
+  top: 300px;
+}
+.logo3 img {
+  margin-right: 10px;
+  height: 70px;
+  clip-path: inset(10px 0 0 0);
+  position: absolute;
+  top: 300px;
+}
+.logo4 img {
+  margin-right: 10px;
+}
+.logo5 img {
+  margin-right: 10px;
+  position: absolute;
+}
+.logo6 img {
+  margin-right: 10px;
+  height: 60px;
+  clip-path: inset(10px 0 0 0);
+  position: relative;
+  top: -10px;
 }
 .trackingTime {
-  background-color: blue;
-  height: 150px;
+  background-color: var(--violet-dark);
+  height: 160px;
   border-radius: 20px 20px 0 0;
+  position: relative;
+  top: -10px;
 }
