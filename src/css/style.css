@@ -8,7 +8,9 @@
   --Soft-orange-self-care: hsl(43, 84%, 65%);
   --violet-dark: hsl(235, 46%, 20%);
 }
-
+body {
+  background-color: hsl(226, 43%, 10%);
+}
 .container {
   height: 100vh;
   box-sizing: border-box;
