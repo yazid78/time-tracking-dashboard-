@@ -76,7 +76,7 @@
 
 /* css pour les autres cards */
 .card {
-  background-color: green;
+  background-color: var(--violet-dark);
   height: 100%;
   display: grid;
   border-radius: 20px;
@@ -174,4 +174,28 @@
 }
 .typeTracking {
   padding-left: 30px;
+}
+@media (max-width: 1086px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 40px;
+    max-height: 216px;
+  }
+}
+@media (max-width: 500px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 40px;
+    max-height: 216px;
+  }
 }
