@@ -183,8 +183,44 @@
     width: 100%;
   }
   .card {
-    margin-bottom: 40px;
     max-height: 216px;
+  }
+  .textProfil {
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    opacity: 50%;
+  }
+  .nameProfil {
+    display: flex;
+  }
+  .nameProfil div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    opacity: 50%;
+  }
+  .nameProfil h1 {
+    width: 100%;
+    font-size: 18px;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .trackingTime h1 {
+    font-size: 30px;
+  }
+  .trackingTime p {
+    font-size: 14px;
+    opacity: 50%;
+  }
+  .typeTracking {
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .trackingTime {
+    height: auto;
   }
 }
 @media (max-width: 500px) {
@@ -195,7 +231,25 @@
     width: 100%;
   }
   .card {
-    margin-bottom: 40px;
     max-height: 216px;
+  }
+  .textProfil {
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    opacity: 50%;
+  }
+  .nameProfil h1 {
+    width: 100%;
+    font-size: 18px;
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .trackingTime h1 {
+    font-size: 30px;
+  }
+  .trackingTime p {
+    font-size: 14px;
+    opacity: 50%;
   }
 }
